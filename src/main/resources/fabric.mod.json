@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "likehearts",
+  "version": "${version}",
+  "name": "LikeHearts",
+  "description": "Клиентский мод: ставит сердечко (красное, жёлтое или фиолетовое) над ником игрока и в табе. Команда: /like <ник> <0-3>.",
+  "authors": [
+    "you"
+  ],
+  "contact": {},
+  "license": "CC0-1.0",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.example.likehearts.LikeHeartsClientMod"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "likehearts.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.1.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
